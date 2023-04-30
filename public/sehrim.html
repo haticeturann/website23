@@ -1,91 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="slideshow-container">
-    
-    <div class="mySlides fade">
-    <div class="SilderImageContainer">
-      <img src="./images/tortum_şelalesi.jpg" style="width:100%">
-    </div>
-      <div class="text">Caption Text</div>
-    </div>
-    
-    <div class="mySlides fade">
-        <div class="SilderImageContainer">
-            <img src="./images/peribacalari.jpg" style="width:100%">
-        </div>
-     
-      <div class="text">Caption Two</div>
-    </div>
-    
-    <div class="mySlides fade">
-    <div class="SilderImageContainer">
-      <img src="./images/oskvank.jpg" style="width:100%">
-    </div>
-      <div class="text">Caption Three</div>
-    </div>
 
-    <div class="mySlides fade">
-    <div class="SilderImageContainer">
-        <img src="./images/yedigoller.jpg"style="width:100%">
-    </div>
-        <div class="text">Caption Text</div>
-      </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-      <span class="dot" onclick="currentSlide(4)"></span> 
-    </div>
-    
+  <!-- Navigation Bar -->
+<div class="navbar">
+  <a href="about.html">Ana Sayfa</a>
+  <a href="sehrim.html">Şehrim</a>
+  <a href="#">Mirasımız</a>
+  <a href="#">İlgi Alanlarım</a>
+  <a href="#">İletişim</a>
+  <a href="http://127.0.0.1:3000/login">Giriş</a>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="./images/tortum_şelalesi.jpg" style="width:100% ;height: 500px">
+  <div class="text">Tortum Şelalesi</div>
+</div> 
+
+<div class="mySlides fade">
+  <img src="./images/yedigoller.jpg" style="width:100% ;height: 500px">
+  <div class="text">Yedigöller</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="./images/peribacalari.jpg" style="width:100% ;height: 500px">
+  <div class="text">Narman Peri Bacaları</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="./images/oskvank.jpg" style="width:100% ;height: 500px">
+  <div class="text">Öşk-Vank Kilisesi</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
 
 
-    <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
-    
-    
-    
-      
+
+
 </body>
-</html>
+</html> 

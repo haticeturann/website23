@@ -76,6 +76,7 @@
   /* Footer */
   .footer {
     padding: 20px;
+    margin-top: 20px;
     text-align: center;
     background: #ddd;
   }
@@ -174,3 +175,14 @@
   padding: 50px;
   text-align: center;
 }
+/*------------------------------------------------------*/
+/*--------------------------------------------------------mirasimiz---------------------------------------------------------*/
+.mirasimiz{
+  padding-top: 20px;
+ 
+  
+}
+.mirasimizYazi{
+  text-align: center;
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>İletişim</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- Header -->
+<!-- <div class="header">
+  <h1>My Website</h1>
+  <p>With a <b>flexible</b> layout.</p>
+</div> -->
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="about.html">Ana Sayfa</a>
+  <a href="sehrim.html">Şehrim</a>
+  <a href="mirasimiz.html">Mirasımız</a>
+  <a href="#">İlgi Alanlarım</a>
+  <a href="iletişim.html">İletişim</a>
+  <a href="http://127.0.0.1:3000/login">Giriş</a>
+</div>
+
+
+<h1 class="baslik">İletişim</h1>
+    <form id="contact-form" class="form">
+      <label for="first-name">Adınız:</label><br>
+      <input type="text" id="first-name" name="first-name" required ><br><br>
+      <label for="last-name">Soyadınız:</label><br>
+      <input type="text" id="last-name" name="last-name" required><br><br>
+      <label for="email">E-posta Adresiniz:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Mesajınız:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      <input type="submit" value="Gönder">  
+    </form>
+
+
+
+    <script>
+      const form = document.getElementById("contact-form");
+      
+      form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const formData = new FormData(form);
+        
+        // Verileri alın ve burada istenilen işlemi yapın
+        const firstName = formData.get("first-name");
+        const lastName = formData.get("last-name");
+        const email = formData.get("email");
+        const message = formData.get("message");
+        
+        console.log("Ad: " + firstName);
+        console.log("Soyad: " + lastName);
+        console.log("E-posta: " + email);
+        console.log("Mesaj: " + message);
+        
+        // Formun gönderildiği mesajını kullanıcıya gösterin
+        alert("Mesajınız gönderildi. Teşekkür ederiz!");
+        
+        // Formu sıfırlayın
+        form.reset();
+      });
+    </script>
+
+
+
+<!-- Footer -->
+<div class="footer">
+    <div class="socialItem">
+      <a  href="#" class="fab fa-facebook-f"></a>
+      <a  href="https://twitter.com/HaticeT11804612" class="fab fa-twitter"></a>
+      <a  href="https://www.instagram.com/turann.hatice/" class="fab fa-instagram"></a>
+    </div>
+  </div>

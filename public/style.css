@@ -206,3 +206,7 @@
   font-size: large;
   color: #2b2929;
 }
+.harita{
+  flex:none;
+  justify-content: center;
+}

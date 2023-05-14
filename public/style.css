@@ -6,8 +6,8 @@
   body {
     font-family: Arial;
     margin: 0;
-  }
-  
+    
+  }  
   /* Header/logo Title */
   /* .header {
     padding:5px;
@@ -18,7 +18,7 @@
   
   /* Style the top navigation bar */
   .navbar {
-    padding: 30px;
+    padding: 14px 50px;
     display: flex;
     background-color: #333; 
     display: flex;
@@ -68,7 +68,7 @@
   
   /* Fake image, just for this example */
   .fakeimg {
-    background-color: #aaa;
+    
     width: 80%;
     padding: 20px;
     margin-top: 10px;
@@ -189,7 +189,9 @@
 }
 
 .hakkimda{
-  font-size:x-large;
+  
+  margin: 20px,30px;
+  font-size:large;
 }
 .hakkimdaheader{
   align-items: center;
@@ -205,8 +207,30 @@
   text-align: center;
   font-size: large;
   color: #2b2929;
+  
 }
 .harita{
   flex:none;
   justify-content: center;
 }
+
+  /* /* .b_giris{
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+  } */
+ .giris{
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ }

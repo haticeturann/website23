@@ -18,11 +18,11 @@
 
 <!-- Navigation Bar -->
 <div class="navbar">
-  <a href="about.html">Ana Sayfa</a>
-  <a href="sehrim.html">Şehrim</a>
-  <a href="mirasimiz.html">Mirasımız</a>
-  <a href="#">İlgi Alanlarım</a>
-  <a href="iletişim.html">İletişim</a>
+  <a href="http://127.0.0.1:3000/">Ana Sayfa</a>
+  <a href="http://127.0.0.1:3000/sehrim">Şehrim</a>
+  <a href="http://127.0.0.1:3000/mirasimiz">Mirasımız</a>
+  <a href="http://127.0.0.1:3000/ilgi_alanlarim">İlgi Alanlarım</a>
+  <a href="http://127.0.0.1:3000/iletisim">İletişim</a>
   <a href="http://127.0.0.1:3000/login">Giriş</a>
 </div>
 
@@ -39,35 +39,11 @@
       <textarea id="message" name="message" rows="5" required></textarea><br><br>
       <input type="submit" value="Gönder">  
     </form>
+    <p id="demo"></p>
 
 
 
-    <script>
-      const form = document.getElementById("contact-form");
-      
-      form.addEventListener("submit", function(event) {
-        event.preventDefault();
-        const formData = new FormData(form);
-        
-        // Verileri alın ve burada istenilen işlemi yapın
-        const firstName = formData.get("first-name");
-        const lastName = formData.get("last-name");
-        const email = formData.get("email");
-        const message = formData.get("message");
-        
-        console.log("Ad: " + firstName);
-        console.log("Soyad: " + lastName);
-        console.log("E-posta: " + email);
-        console.log("Mesaj: " + message);
-        
-        // Formun gönderildiği mesajını kullanıcıya gösterin
-        alert("Mesajınız gönderildi. Teşekkür ederiz!");
-        
-        // Formu sıfırlayın
-        form.reset();
-      });
-    </script>
-
+    
 
 
 <!-- Footer -->
@@ -78,3 +54,7 @@
       <a  href="https://www.instagram.com/turann.hatice/" class="fab fa-instagram"></a>
     </div>
   </div>
+  <script src="login.js"></script>
+
+
+  </body>

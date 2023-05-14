@@ -5,26 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Giriş</title>
    
 </head>
 <body>
     <div class="navbar">
-        <a href="about.html">Ana Sayfa</a>
-        <a href="sehrim.html">Şehrim</a>
-        <a href="mirasimiz.html">Mirasımız</a>
-        <a href="#">İlgi Alanlarım</a>
-        <a href="iletişim.html">İletişim</a>
+        <a href="http://127.0.0.1:3000/">Ana Sayfa</a>
+        <a href="http://127.0.0.1:3000/sehrim">Şehrim</a>
+        <a href="http://127.0.0.1:3000/mirasimiz">Mirasımız</a>
+        <a href="http://127.0.0.1:3000/ilgi_alanlarim">İlgi Alanlarım</a>
+        <a href="http://127.0.0.1:3000/iletisim">İletişim</a>
         <a href="http://127.0.0.1:3000/login">Giriş</a>
       </div>
 
-    <form action="http://127.0.0.1:3000/api/user" method="POST">
+    <div class="giris">
+    <form action="http://127.0.0.1:3000/user" method="POST">
         <label for="kadi">Kullanıcı Adı</label><br>
-        <input type="text" id="kadi" name="username" ><br>
+        <input type="text" id="kadi" name="username" required ><br>
         <label for="sifre">Şifre</label><br>
-        <input type="text" id="sifre" name="password" ><br><br>
+        <input type="text" id="sifre" name="password" required ><br><br>
         <input type="submit" value="Gönder" >
     </form>
+</div>
+
+<!-- <div class="footer">
+    <div class="socialItem">
+      <a  href="#" class="fab fa-facebook-f"></a>
+      <a  href="https://twitter.com/HaticeT11804612" class="fab fa-twitter"></a>
+      <a  href="https://www.instagram.com/turann.hatice/" class="fab fa-instagram"></a>
+    </div>
+</div> -->
+
+
     
 </body>
 </html>

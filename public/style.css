@@ -203,11 +203,21 @@
   height: 100%;
   padding: 100px 500px;
 }
-.baslik{
+/* .baslik{
+  
   text-align: center;
   font-size: large;
   color: #2b2929;
   
+} */
+.iletisim_form{
+  background-image: url(images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 .harita{
   flex:none;
@@ -228,7 +238,6 @@
     background-image: url(images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
     display: flex;
     justify-content: center;
     align-items: center;

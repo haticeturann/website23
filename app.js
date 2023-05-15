@@ -3,6 +3,7 @@ const app = express();
 const path = require("path");
 const bodyParser = require('body-parser')
 const user = require("./route/user")
+const api = require("./route/api")
 
 app.set('view engine', 'ejs')
 
@@ -33,6 +34,7 @@ app.get("/iletisim",(req,res)=>{
 
 
 app.use("/",user)
+app.use("/",api)
 
 
 app.listen(3000,()=>{

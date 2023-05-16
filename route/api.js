@@ -2,12 +2,7 @@ const express = require("express");
 
 const route = express.Router();
 
-route.post("/users", (req, res) => {
-    const { fname, lname } = req.body;
-    res.render("user.ejs", {
-        fname, lname
-    })
-})
+
 
 const fetch = require('isomorphic-fetch');
 
